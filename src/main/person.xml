@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<people>
+    <person id="1001">
+        <username>buyer</username>
+        <pass>123</pass>
+        <address>Manisa</address>
+    </person>
+    <person id="2001">
+        <username>seller</username>
+        <pass>123</pass>
+        <address>İzmir</address>
+    </person>
+    <person id="3001">
+        <username>courier</username>
+        <pass>123</pass>
+        <address>Aydın</address>
+    </person>
+</people>
