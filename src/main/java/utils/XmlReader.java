@@ -1,8 +1,10 @@
 package utils;
 
+import data.Buyer;
+import data.Courier;
+import data.Seller;
 import interfaces.IFileReader;
 import interfaces.ProjectData;
-import model.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

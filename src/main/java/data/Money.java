@@ -1,4 +1,4 @@
-package model;
+package data;
 
 public class Money {
 
@@ -6,6 +6,10 @@ public class Money {
 
     public Money(int money) {
         this.money = money;
+    }
+
+    public Money( ) {
+      this.money = 0;
     }
 
     public int getMoney() {
@@ -17,7 +21,17 @@ public class Money {
         return this;
     }
 
+    public Money add(Money money) {
+        this.money += money.getMoney();
+        return this;
+    }
+
     public void setMoney(int money) {
         this.money = money;
+    }
+
+    @Override
+    public String toString() {
+        return "Money: " + money;
     }
 }

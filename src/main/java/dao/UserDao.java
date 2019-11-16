@@ -1,8 +1,8 @@
 package dao;
 
+import data.*;
 import interfaces.Dao;
 import interfaces.ProjectData;
-import model.*;
 import utils.XmlReader;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class UserDao implements Dao<Person> {
 
     @Override
     public List<Person> getAll() {
-        return null;
+        return users;
     }
 
     public Seller getSeller() {
@@ -33,5 +33,9 @@ public class UserDao implements Dao<Person> {
 
     public Courier getCourier() {
         return (Courier) users.get(2);
+    }
+
+    public Admin getAdmin() {
+        return new Admin(1, "admin", "admin", "Istanbul");
     }
 }

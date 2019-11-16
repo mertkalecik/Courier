@@ -1,1 +1,1 @@
-RichClientApplication
+ConsoleApplication

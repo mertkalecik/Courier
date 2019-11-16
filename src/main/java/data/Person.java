@@ -1,9 +1,11 @@
-package model;
+package data;
 
 
 import interfaces.ProjectData;
 
-public abstract class Person implements ProjectData {
+import java.util.Observable;
+
+public abstract class Person extends Observable implements ProjectData {
     private int id;
     private String username;
     private String pass;
@@ -15,6 +17,8 @@ public abstract class Person implements ProjectData {
         this.pass = pass;
         this.address = address;
     }
+
+    public Person() {}
 
     public String getAddress() {
         return address;
